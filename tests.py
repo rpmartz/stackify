@@ -1,8 +1,9 @@
-from app import remove_non_letters
 import unittest
 
-class TestConvertingStackNames(unittest.TestCase):
+from app import remove_non_letters
 
+
+class TestConvertingStackNames(unittest.TestCase):
     def test_letters_are_uppercased(self):
         self.assertEqual('ABC', remove_non_letters('abc'))
 
