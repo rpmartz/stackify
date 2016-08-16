@@ -12,3 +12,7 @@ def build_stack():
 @app.route('/your-stack')
 def display_stack():
     pass
+
+def remove_non_letters(stack_name):
+    letters = [letter.upper() for letter in stack_name if letter.isalpha()]
+    return ''.join(letters)
