@@ -1,1 +1,1 @@
-web: gunicorn stackz:app 
+web: gunicorn stackz:app
