@@ -28,3 +28,12 @@ technologies = {
     'Z': ['Zookeeper', 'Zuul'],
 }
 
+from random import randint
+
+
+def get_stack_for_letter(letter):
+    potential_technologies = technologies[letter]
+    num_technologies = len(potential_technologies)
+    idx = randint(0, num_technologies - 1)
+
+    return potential_technologies[idx]
