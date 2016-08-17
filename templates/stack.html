@@ -8,7 +8,7 @@
     {% with stack_names = get_flashed_messages(category_filter='stackName') %}
         {% for stack_name in stack_names %}
             <h4>Your stack is the {{ stack_name }} stack</h4>
-        {% endfor %}
+                {% endfor %}
     {% endwith %}
     {% with messages = get_flashed_messages(category_filter='technology') %}
         {% if messages %}
