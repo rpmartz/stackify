@@ -1,6 +1,6 @@
 import unittest
 
-from app import remove_non_letters
+from stackz import remove_non_letters
 
 
 class TestConvertingStackNames(unittest.TestCase):
