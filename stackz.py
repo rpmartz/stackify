@@ -1,12 +1,9 @@
-import os
-
 from flask import Flask
-from flask import render_template, request, redirect, url_for, flash
+from flask import render_template, request
 
 from stackbuilder import get_stack_for_letter
 
 app = Flask(__name__)
-app.secret_key = os.urandom(24)
 
 
 @app.route('/')
@@ -20,11 +17,8 @@ def build_stack():
     stack_name_letters = remove_non_letters(submitted_stack_name)
     stack = [get_stack_for_letter(l) for l in stack_name_letters]
 
-    flash(''.join(stack_name_letters), 'stackName')
-    for technology in stack:
-        flash(technology, 'technology')
-
-    return redirect(url_for('display_stack'))
+    stack_name = ''.join(stack_name_letters)
+    return render_template('stack.html', stack=stack, stack_name=stack_name)
 
 
 @app.route('/your-stack')
