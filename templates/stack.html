@@ -1,26 +1,26 @@
 {% extends 'layout.html' %}
 {% block body %}
 
-    <div class="container">
+<div class="container">
     <div class="row">
-    <div class="col-xs-6 col-xs-offset-3">
-    <h2>Stackz</h2>
-    {% with stack_names = get_flashed_messages(category_filter='stackName') %}
-        {% for stack_name in stack_names %}
-            <h4>Your stack is the {{ stack_name }} stack</h4>
+        <div class="col-xs-6 col-xs-offset-3">
+            <h2>Stackz</h2>
+            {% with stack_names = get_flashed_messages(category_filter='stackName') %}
+                {% for stack_name in stack_names %}
+                    <h4>Your stack is the {{ stack_name }} stack</h4>
                 {% endfor %}
-    {% endwith %}
-    {% with messages = get_flashed_messages(category_filter='technology') %}
-        {% if messages %}
-            <ul class=flashes>
-                {% for message in messages %}
-                    <li>{{ message }}</li>
-                {% endfor %}
-            </ul>
-        {% endif %}
-    {% endwith %}
-    <p><a href="{{ url_for('index') }}" class="btn btn-info">Pick a New Stack</a></p>
-{% endblock %}
-</div>
-</div>
+            {% endwith %}
+            {% with messages = get_flashed_messages(category_filter='technology') %}
+                {% if messages %}
+                    <ul class=flashes>
+                        {% for message in messages %}
+                            <li>{{ message }}</li>
+                        {% endfor %}
+                    </ul>
+                {% endif %}
+            {% endwith %}
+            <p><a href="{{ url_for('index') }}" class="btn btn-info">Pick a New Stack</a></p>
+        {% endblock %}
+        </div>
+    </div>
 </div>
