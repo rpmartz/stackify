@@ -20,7 +20,7 @@ def build_stack():
     stack_name_letters = remove_non_letters(submitted_stack_name)
     stack = [get_stack_for_letter(l) for l in stack_name_letters]
 
-    flash('Your stack is the %s stack' % ''.join(stack_name_letters), 'stackName')
+    flash(''.join(stack_name_letters), 'stackName')
     for technology in stack:
         flash(technology, 'technology')
 

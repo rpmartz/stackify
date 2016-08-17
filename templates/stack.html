@@ -5,8 +5,12 @@
     <title>Stackz</title>
 </head>
 <body>
-<p>Your stack is the </p>
-{% with messages = get_flashed_messages() %}
+{% with stack_names = get_flashed_messages(category_filter='stackName') %}
+    {% for stack_name in stack_names %}
+        <p>Your stack is the {{ stack_name }} stack</p>
+    {% endfor %}
+{% endwith %}
+{% with messages = get_flashed_messages(category_filter='technology') %}
     {% if messages %}
         <ul class=flashes>
             {% for message in messages %}
