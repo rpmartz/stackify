@@ -54,3 +54,9 @@ a:hover {
 .control-label {
     font-size: 16px;
 }
+
+@media only screen and (max-device-width : 736px) {
+    h1 {
+        clear: both;
+    }
+}
