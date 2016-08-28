@@ -3,8 +3,7 @@ from flask import render_template, request
 
 from stackbuilder import get_stack_for_letter
 
-app = Flask(__name__)
-
+app = Flask(__name__, static_url_path = "", static_folder = "tmp")
 
 @app.route('/')
 def index():
