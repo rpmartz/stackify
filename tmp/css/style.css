@@ -50,3 +50,7 @@ a:hover {
     color: white;
     text-decoration: none;
 }
+
+.control-label {
+    font-size: 16px;
+}
