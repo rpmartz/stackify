@@ -4,6 +4,7 @@ body {
     color: black;
     font-family: "Source Sans Pro", sans-serif;
     background-position: bottom right;
+    background-attachment: fixed;
 }
 
 h1 {
@@ -31,11 +32,9 @@ ul {
 
 .main-content {
     width: 75%;
-    margin: 0 auto;
     background-color: rgba(255,255,255,.9);
     border-radius: 3px;
-    margin-top: 15px;
-    padding-bottom: 20px;
+    margin: 30px
 }
 
 .logo-container {
@@ -55,7 +54,7 @@ ul {
     margin-right: 0;
 }
 
-.intro {
+.description {
     padding: 30px;
 }
 
@@ -93,5 +92,23 @@ input[type="text"]:focus {
 @media only screen and (max-device-width : 736px) {
     h1 {
         clear: both;
+        text-align: center;
+        padding-bottom: 10px;
+    }
+
+    .stacks-container {
+        display: block;
+        padding: 5px;
+    }
+
+    .main-content {
+        margin: 0 auto;
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
+
+    .logo {
+        margin: 0;
+        padding-top: 20px;
     }
 }
