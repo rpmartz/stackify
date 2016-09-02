@@ -1,31 +1,62 @@
 body {
-    background-color: #f6f8f9;
+    background: url("../stackzBackground.png");
+    background-size: cover;
     color: black;
     font-family: "Source Sans Pro", sans-serif;
+    background-position: bottom right;
 }
 
 h1 {
-    padding: none;
-    margin: none;
+    padding: 0;
+    margin: 0;
 }
 
 ul {
     margin-bottom: 20px;
 }
 
+.stacks-container {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
 .logo {
     max-width: 150px;
     float: left;
-    margin: 20px;
+    margin: 30px;
 }
 
-.stacks-container {
-    max-width: 75%;
+.main-content {
+    width: 75%;
     margin: 0 auto;
-    background-color: white;
+    background-color: rgba(255,255,255,.9);
     border-radius: 3px;
     margin-top: 15px;
     padding-bottom: 20px;
+}
+
+.logo-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.col-md-9, .col-md-3 {
+    margin: 0;
+    padding: 0;
+}
+
+.row {
+    margin-left: 0;
+    margin-right: 0;
+}
+
+.intro {
+    padding: 30px;
 }
 
 .form-control {
@@ -53,6 +84,10 @@ a:hover {
 
 .control-label {
     font-size: 16px;
+}
+
+input[type="text"]:focus {
+    border: 1px solid rgb(199, 204, 209);
 }
 
 @media only screen and (max-device-width : 736px) {

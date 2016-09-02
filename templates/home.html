@@ -1,25 +1,26 @@
 {% extends 'layout.html' %}
 {% block body %}
-
-    <div class="stacks-container">
+    <div class="main-content">
         <div class="row">
-        <img src="stackzLogo.png" class="logo">
-        <div class="col-md-8">
-            <h1>Stackz</h1>
-            <p>It can be tough to pick which technologies to use for your startup or project.</p>
-            <p>We can help.</p>
-            <p>Enter a word relevant to your project and we'll recommend a stack you can use to build it out.</p>
-            <form action="stack" method="post">
-                <div class="form-group">
-                    <label class="control-label" for="stackName">Name:</label>
-                    <input class="form-control" type="text" name="stackName" required="required"
-                           pattern="[A-Za-z]{1,8}"/>
-                </div>
-                <div class="form-group">
-                    <input type="submit" value="Stackify Me" class="submit-button"/>
-                </div>
-            </form>
-        </div>
+            <div class="logo-container col-md-3">
+                <img src="stackzLogo.png" class="logo">
+            </div>
+            <div class="col-md-9 intro">
+                <h1>Stackz</h1>
+                <p>It can be tough to pick which technologies to use for your startup or project.</p>
+                <p>We can help.</p>
+                <p>Enter a word relevant to your project and we'll recommend a stack you can use to build it out.</p>
+                <form action="stack" method="post">
+                    <div class="form-group">
+                        <label class="control-label" for="stackName">Name:</label>
+                        <input class="form-control" type="text" name="stackName" required="required"
+                               pattern="[A-Za-z]{1,8}"/>
+                    </div>
+                    <div class="form-group">
+                        <input type="submit" value="Stackify Me" class="submit-button"/>
+                    </div>
+                </form>
+            </div>
         </div>
     </div>
 {% endblock %}
