@@ -7,16 +7,17 @@
             <img src="stackzLogo.png" class="logo">
         </div>
         <div class="col-md-9 description">
-            <h1>Stackz</h1>
+            <h1>Get ready for the {{ stack_name }} stack:</h1>
 
-            <h4>Your stack is the {{ stack_name }} stack</h4>
-                <ul class=flashes>
-                    {% for technology in stack %}
-                        <li>{{ technology }}</li>
-                    {% endfor %}
-                </ul>
-            <p><a href="{{ url_for('index') }}" class="submit-button">Pick a New Stack</a></p>
-            {% endblock %}
+            {% for technology in stack %}
+                <div class="technology">{{ technology }}</div>
+            {% endfor %}
+
+            <div class="mt-50">
+                <a href="{{ url_for('index') }}" class="submit-button">Pick a New Stack</a>
+            </div>
         </div>
     </div>
 </div>
+
+{% endblock %}
