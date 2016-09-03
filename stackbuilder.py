@@ -1,11 +1,11 @@
 
 technologies = {
-    'A': ['Angular.js', 'Apache', 'Agda', 'Accumulo'],
+    'A': ['Angular.js', 'Apache', 'Agda', 'Accumulo', 'ArangoDB'],
     'B': ['Backbone.js', 'Bootstrap', 'Brython'],
     'C': ['C++', 'C#', 'Coldfusion', 'Clojure', 'Couchbase', 'Cassandra', 'CentOS'],
     'D': ['Dart', 'D', 'Django', 'Docker', 'DynamoDB', 'Dojo.js', 'Debian'],
     'E': ['Ember.js', 'Erlang', 'Elm', 'Elixir', 'Express.js'],
-    'F': ['F#', 'Flask', 'Frege', 'FoundationDB', 'Fedora'],
+    'F': ['F#', 'Flask', 'Frege', 'FoundationDB', 'Fedora', 'Foxx'],
     'G': ['Go', 'Grunt.js', 'Gulp.js', 'Gentoo'],
     'H': ['Haskell', 'Hadoop', 'Hapi.js', 'Hive', 'HyperDex', 'HBase'],
     'I': ['Io.js', 'Idris', 'Io', 'InfluxDB'],
