@@ -105,6 +105,7 @@ a:hover {
 .input-lg {
     border: 1px solid rgb(199, 204, 209);
     border-radius: 3px;
+    width: 60%;
 }
 
 input:focus {
@@ -138,6 +139,7 @@ input:focus {
     .stacks-container {
         display: block;
         padding: 5px;
+        text-align: center;
     }
 
     .main-content {
@@ -145,8 +147,21 @@ input:focus {
         margin-top: 20px;
     }
 
+    .description {
+        text-align: left;
+    }
+
     .logo {
         margin: 0;
         padding-top: 20px;
+    }
+
+    .input-lg {
+        width: 100%;
+        margin-bottom: 10px;
+    }
+
+    .disclaimer {
+        width: 75%;
     }
 }
