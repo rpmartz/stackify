@@ -75,9 +75,13 @@ ul {
     background-color: #e9590d;
 }
 
+a:link, a:active, a:visited {
+	color: white;
+	text-decoration: none;
+}
+
 a:hover {
     color: white;
-    text-decoration: none;
 }
 
 .control-label {
